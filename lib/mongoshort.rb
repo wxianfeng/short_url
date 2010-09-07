@@ -73,6 +73,7 @@ __END__
 %title Short_url!
 %link{:rel => 'stylesheet', :href => 'http://www.w3.org/StyleSheets/Core/Modernist', :type => 'text/css'}
 %link{:rel => 'stylesheet', :href => 'style.css', :type => 'text/css'}
+%script{:rel => 'javascript', :src => 'uservoice.js', :type => 'text/javascript'}
 %link{:rel=>"shortcut icon", :type=>"image/x-icon", :href=>"/favicon.ico"}
 = yield
 
@@ -111,6 +112,3 @@ __END__
     %strong
       =ele.last_accessed.to_s(:db)
   %br
-
-  
-
