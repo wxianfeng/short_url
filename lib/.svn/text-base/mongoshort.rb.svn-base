@@ -87,10 +87,10 @@ __END__
     %input{:type => 'submit', :value => 'short!'}
 #footer
   %small copyright &copy;
-  %a{:href => 'http://wxianfeng.com'}
+  %a{:href => 'http://wxianfeng.com',:target=>"_blank"}
     wxianfeng
   %br
-  %a{:href => ''}
+  %a{:href => 'http://github.com/wxianfeng/short_url',:target=>"_blank"}
     source code
 - @urls.each do |ele|
   %a{:href => ele.full_url,:target=>"_blank"}

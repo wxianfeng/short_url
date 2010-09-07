@@ -1,3 +1,26 @@
 the source of http://url.wxianfeng.com
 
+short_url is like http://tinyurl.com/ or http://goo.gl/ or ...
+
 short_url is developed by mongodb 1.4.4 + ruby 1.8.7 + haml 3.0.13 + sinatra 1.0
+
+1,config db in mongoshort.rb
+
+2,start sinatra app
+>nohup ruby mongoshort.rb -e production &
+
+more option see : http://github.com/sinatra/sinatra
+
+3,start mongodb
+>nohup mongodb/bin/mongod --dbpath=/usr/local/system/mongodb/data &
+
+4,see siantra app and mongodb are started?
+>netstat -antup
+
+tcp        0      0 0.0.0.0:27017               0.0.0.0:*                   LISTEN      25471/mongod
+tcp        0      0 0.0.0.0:4567                0.0.0.0:*                   LISTEN      25469/ruby
+
+more infos , u can contact me :
+wang.fl1429@gmail.com
+http://wxianfeng.com
+
